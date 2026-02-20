@@ -6,7 +6,7 @@ from app.models.driver import Driver
 from app.models.licenceState import LicenceState
 from app.models.officer import officer
 from app.models.vehicle import Vehicle
-from app.models.violation import violation
+from app.models.violation import Violation
 
 def init_db():
     Base.metadata.create_all(bind=engine)

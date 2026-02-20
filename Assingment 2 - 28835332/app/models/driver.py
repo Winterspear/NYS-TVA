@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, String, DateTime, CHAR, TEXT, Boolean, ForeignKey, Date
 from app.db.base import Base
+from sqlalchemy.orm import relationship
 
 class Driver(Base):
     __tablename__ = "Driver"
@@ -12,5 +13,5 @@ class Driver(Base):
     heightInches = Column(Integer, nullable=False)
     weight = Column(Integer, nullable=False)
     eyeColor = Column(String(30), nullable=False)
-    licenceStateID = Column(Integer, ForeignKey(LicenceState.licenceStateID), nullable=False)
-    addressID = Column(Integer, ForeignKey(address.addressID), nullable=False)
+    licenceStateID = Column(Integer, ForeignKey("LicenceState.LicenceStateID"), nullable=False)
+    addressID = Column(Integer, ForeignKey("Address.AddressID"), nullable=False)

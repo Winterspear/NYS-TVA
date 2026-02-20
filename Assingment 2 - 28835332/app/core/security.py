@@ -1,8 +1,22 @@
 import os
 from fastapi import Header
 from app.core.errors import InvalidAPIKeyError
+from datetime import datetime, timedelta, timezone
+from passlib.context import CryptContext
+from jose import jwt
 
-def require_api_key(x_api_key: str | None = Header(default=None, alias = "X-API-KEY")):
-    expected_api_key = os.getenv("API_KEY", "Administrator_API_KEY")
-    if x_api_key != expected_api_key:
-        raise InvalidAPIKeyError("Invalid API key provided.")
+SECRET_KEY = os.getenv("SECRET_KEY", "SYSAD")
+ALGORITHM = "HS256"
+ACCESS_TOKEN_EXPIRE_MINUTES = 30
+pwd_context = CryptContext (schemes=["bcrypt"], deprecated = "auto")
+
+def hash_password(password :str) -> str:
+    return pwd_context.hash(password)
+
+def verify_password(plain_password: str, password_hash :str) -> bool:
+    return pwd_context.verify(plain_password, password_hash)
+
+def create_access_token(subject: str, expires_minutes: int = ACCESS_TOKEN_EXPIRE_MINUTES) -> str:
+    expires = datetime.now(timezone.utc) + timedelta(minutes = expires_minutes)
+    payload = {"sub": subject, "exp": expire}
+    return jwt.encode(payload, SECRET_KEY, algorithm=ALGORITHM)
