@@ -1,5 +1,6 @@
 from sqlalchemy import Column, Integer, String, DateTime, CHAR, TEXT, Boolean, ForeignKey, Year
 from app.db.base import Base
+from sqlalchemy.orm import relationship
 
 class Vehicle(Base):
     __tablename__ = "Vehicle"
@@ -11,5 +12,5 @@ class Vehicle(Base):
     design = Column(String(30), nullable=False)
     manufactureyear = Column(Year, nullable=False)
     color = Column(String(30), nullable=False)
-    addressID = Column(Integer, ForeignKey(address.addressID), nullable=False)
-    licenseStateID = Column(Integer, ForeignKey(LicenceState.licenceStateID), nullable=False)
+    addressID = Column(Integer, ForeignKey("address.addressID"), nullable=False)
+    licenseStateID = Column(Integer, ForeignKey("licenceState.licenceStateID"), nullable=False)
