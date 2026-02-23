@@ -11,7 +11,7 @@ from app.models.driver import driver
 
 router = APIRouter(prefix="/drivers", tags=["drivers"])
 
-@router.get("/", response_model=List[DriverOut])
+@router.get("/all_drivers", response_model=List[DriverOut])
 def list_drivers(db: Session = Depends(get_db)):
     return get_all_drivers(db)
 

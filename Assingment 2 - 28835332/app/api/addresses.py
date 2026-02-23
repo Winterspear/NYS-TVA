@@ -11,15 +11,8 @@ from app.models.address import address
 
 router = APIRouter(prefix="/addresses", tags=["addresses"])
 
-@router.post("/address/{address_id}", status_code=201, response_model=AddressOut)
-async def create_address(address_in: AddressCreate, db: Session = Depends(get_db), current_user: str = Depends(get_current_user)):
-    next_id = max([address.addressID for address in get_all_addresses(db)], default=0) + 1
-    new_address = AddressOut(next_id, **address_in.dict())
-    address.append(new_address)
-    return new_address
 
-
-@router.put("/address/{address_id}", status_code=201, response_model=AddressOut)
+@router.put("/address/{address_id}/update", status_code=201, response_model=AddressOut)
 async def update_address(address_id: int, address_in: AddressCreate, updated: AddressCreate, db: Session = Depends(get_db), current_user: str = Depends(get_current_user)):
     for index, address in enumerate(get_all_addresses(db)):
         if address.addressID == address_id:
@@ -29,7 +22,7 @@ async def update_address(address_id: int, address_in: AddressCreate, updated: Ad
     
 
 
-@router.delete("/address/{address_id}", status_code=204)
+@router.delete("/address/{address_id}/delete", status_code=204)
 async def delete_address(address_id: int, db: Session = Depends(get_db), current_user: str = Depends(get_current_user)):
     for index, address in enumerate(get_all_addresses(db)):
         if address.addressID == address_id:

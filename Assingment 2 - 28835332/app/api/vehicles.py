@@ -11,7 +11,7 @@ from app.models.vehicle import vehicle
 
 router = APIRouter(prefix="/vehicles", tags=["vehicles"])
 
-@router.delete("/vehicle/{vehicle_id}", status_code=204)
+@router.delete("/vehicle/{vehicle_id}/delete", status_code=204)
 async def delete_vehicle(vehicle_id: int, db: Session = Depends(get_db), current_user: str = Depends(get_current_user)):
     for index, v in enumerate(get_all_vehicles(db)):
         if v.vehicleID == vehicle_id:
@@ -20,7 +20,7 @@ async def delete_vehicle(vehicle_id: int, db: Session = Depends(get_db), current
     raise VehicleNotFound(f"Vehicle with ID {vehicle_id} not found.")
 
 
-@router.put("/vehicle/{vehicle_id}", status_code=201, response_model=VehicleOut)
+@router.put("/vehicle/{vehicle_id}/update", status_code=201, response_model=VehicleOut)
 async def update_vehicle(vehicle_id: int, vehicle_in: VehicleCreate, updated: VehicleCreate, db: Session = Depends(get_db), current_user: str = Depends(get_current_user)):
     for index, v in enumerate(get_all_vehicles(db)):
         if v.vehicleID == vehicle_id:

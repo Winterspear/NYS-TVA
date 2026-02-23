@@ -3,7 +3,7 @@ from app.models.user import User as UserModel
 from app.schemas.user import UserCreate
 from app.core.security import hash_password
 
-def get_user_be_email(db:Session, email: str):
+def get_user_by_email(db:Session, email: str):
     return db.query(UserModel).filter(UserModel.email == email).first()
 
 def create_user(db:Session, user_in: UserCreate):

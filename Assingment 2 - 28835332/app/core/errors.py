@@ -22,6 +22,14 @@ class officerNotFound(Exception):
     def __init__(self, personnelID: int):
         self.personnelID = personnelID
 
+class violationNotFound(Exception):
+    def __init__(self, violationID: int):
+        self.violationID = violationID
+
+class userNotFound(Exception):
+    def __init__(self, userID: int):
+        self.userID = userID
+
 class DatabaseConnectionError(Exception):
     def __init__(self, message: str = "Database connection failed"):
         self.message = message
