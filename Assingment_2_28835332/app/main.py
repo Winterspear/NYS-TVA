@@ -5,6 +5,7 @@ from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
 from starlette.exceptions import HTTPException as StarletteHTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from typing import Optional, List
 
 
 app = FastAPI(title="New York State Traffic Violation API", version="1.0.0")

@@ -23,6 +23,10 @@ def read_violation(driver_id: int, db: Session = Depends(get_db)):
         raise ViolationNotFound(driver_id=driver_id)
     return violation
 
+@router.get("/NumberOfViolations", response_model=int)
+def count_violations(db: Session = Depends(get_db)):
+    return len(get_all_violations(db))
+
 @router.post("/violations/{violationID}/Create", status_code=201, response_model=ViolationOut)
 async def create_violation(violation_in: ViolationOut, db: Session = Depends(get_db), current_user: str = Depends(get_current_user)):
     next_id = max([v.violationID for v in get_all_violations(db)], default=0) + 1

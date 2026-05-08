@@ -6,7 +6,7 @@ class address(Base):
 
     addressID = Column(Integer, primary_key=True, index = True)
     addressLine1 = Column(String(30), nullable=False)
-    addressLine2 = Column(String(30), nullable=False)
+    addressLine2 = Column(String(30), nullable=True)
     city = Column(String(30), nullable=False)
     state = Column(String(30), nullable=False)
     zipCode = Column(String(30), nullable=False)

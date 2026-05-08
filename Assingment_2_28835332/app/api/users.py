@@ -4,7 +4,7 @@ from typing import List
 
 from app.core.deps import get_current_user
 from app.db.session import get_db
-from app.crud.user import get_user_by_email, create_user
+from app.crud.user import get_user_by_email, create_user, get_user_by_id
 from app.schemas.user import UserCreate, UserOut
 from app.core.errors import userNotFound
 from app.models.user import User
@@ -17,3 +17,10 @@ async def create_user_endpoint(user_in: UserCreate, db: Session = Depends(get_db
     if existing_user:
         raise userNotFound(f"User with email {user_in.email} already exists.")
     return create_user(db, user_in)
+
+@router.get("/{user_id}", response_model=UserOut)
+def read_user(user_id: int, db: Session = Depends(get_db)):
+    user = get_user_by_id(db, user_id)
+    if not user:
+        raise userNotFound(user_id=user_id)
+    return user

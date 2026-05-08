@@ -1,0 +1,636 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\violation.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\crud\\violation.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\js\\home.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\getUser.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\js\\getUser.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\address.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\models\\address.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\admindisplay.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\js\\admindisplay.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\officers.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\api\\officers.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\violations.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\api\\violations.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\addresses.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\api\\addresses.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\auth.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\api\\auth.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\admins.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\api\\admins.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\violation.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\models\\violation.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\userdisplay.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\userdisplay.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\getViolation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\js\\getViolation.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\admindisplay.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\admindisplay.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\postUser.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\js\\postUser.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\violation.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\schemas\\violation.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\register.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\home.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\models\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\crud\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\users.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\api\\users.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\crud\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\driver.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\schemas\\driver.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\errors.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\core\\errors.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\schemas\\user.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\schemas\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\vehicle.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\models\\vehicle.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\deps.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\core\\deps.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\userportal.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\userportal.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\address.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\schemas\\address.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\models\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\security.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:app\\core\\security.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\adminportal.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\adminportal.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "officers.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\officers.py",
+              "RelativeDocumentMoniker": "app\\api\\officers.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\officers.py",
+              "RelativeToolTip": "app\\api\\officers.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-08T00:06:16.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "admindisplay.js",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\admindisplay.js",
+              "RelativeDocumentMoniker": "Frontend\\js\\admindisplay.js",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\admindisplay.js",
+              "RelativeToolTip": "Frontend\\js\\admindisplay.js",
+              "ViewState": "AgIAABAAAAAAAAAAAAAwwBcAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-07T23:41:14.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "violation.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\violation.py",
+              "RelativeDocumentMoniker": "app\\crud\\violation.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\violation.py",
+              "RelativeToolTip": "app\\crud\\violation.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T23:22:25.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "getViolation.js",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\getViolation.js",
+              "RelativeDocumentMoniker": "Frontend\\js\\getViolation.js",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\getViolation.js",
+              "RelativeToolTip": "Frontend\\js\\getViolation.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-07T22:16:55.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "userdisplay.html",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\userdisplay.html",
+              "RelativeDocumentMoniker": "Frontend\\userdisplay.html",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\userdisplay.html",
+              "RelativeToolTip": "Frontend\\userdisplay.html",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-07T18:02:38.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "violations.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\violations.py",
+              "RelativeDocumentMoniker": "app\\api\\violations.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\violations.py",
+              "RelativeToolTip": "app\\api\\violations.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:56:53.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "auth.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\auth.py",
+              "RelativeDocumentMoniker": "app\\api\\auth.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\auth.py",
+              "RelativeToolTip": "app\\api\\auth.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:09:14.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "admins.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\admins.py",
+              "RelativeDocumentMoniker": "app\\api\\admins.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\admins.py",
+              "RelativeToolTip": "app\\api\\admins.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:07:32.994Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "addresses.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\addresses.py",
+              "RelativeDocumentMoniker": "app\\api\\addresses.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\addresses.py",
+              "RelativeToolTip": "app\\api\\addresses.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:42:10.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "address.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\address.py",
+              "RelativeDocumentMoniker": "app\\models\\address.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\address.py",
+              "RelativeToolTip": "app\\models\\address.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:19:00.995Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "getUser.js",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\getUser.js",
+              "RelativeDocumentMoniker": "Frontend\\js\\getUser.js",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\getUser.js",
+              "RelativeToolTip": "Frontend\\js\\getUser.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-07T21:52:13.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "home.js",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\home.js",
+              "RelativeDocumentMoniker": "Frontend\\js\\home.js",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\home.js",
+              "RelativeToolTip": "Frontend\\js\\home.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-07T20:03:50.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "admindisplay.html",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\admindisplay.html",
+              "RelativeDocumentMoniker": "Frontend\\admindisplay.html",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\admindisplay.html",
+              "RelativeToolTip": "Frontend\\admindisplay.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-07T18:02:56.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "postUser.js",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\postUser.js",
+              "RelativeDocumentMoniker": "Frontend\\js\\postUser.js",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\js\\postUser.js",
+              "RelativeToolTip": "Frontend\\js\\postUser.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-05-07T22:04:49.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "user.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\user.py",
+              "RelativeDocumentMoniker": "app\\models\\user.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\user.py",
+              "RelativeToolTip": "app\\models\\user.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T20:55:34.832Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "violation.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\violation.py",
+              "RelativeDocumentMoniker": "app\\models\\violation.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\violation.py",
+              "RelativeToolTip": "app\\models\\violation.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:18:07.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "register.html",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\register.html",
+              "RelativeDocumentMoniker": "Frontend\\register.html",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\register.html",
+              "RelativeToolTip": "Frontend\\register.html",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAEQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-07T18:19:24.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "home.html",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\home.html",
+              "RelativeDocumentMoniker": "Frontend\\home.html",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\home.html",
+              "RelativeToolTip": "Frontend\\home.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-07T15:37:31.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "driver.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\driver.py",
+              "RelativeDocumentMoniker": "app\\schemas\\driver.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\driver.py",
+              "RelativeToolTip": "app\\schemas\\driver.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:31:09.246Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "errors.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\errors.py",
+              "RelativeDocumentMoniker": "app\\core\\errors.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\errors.py",
+              "RelativeToolTip": "app\\core\\errors.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:40:05.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "vehicle.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\vehicle.py",
+              "RelativeDocumentMoniker": "app\\models\\vehicle.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\vehicle.py",
+              "RelativeToolTip": "app\\models\\vehicle.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:19:31.756Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "deps.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\deps.py",
+              "RelativeDocumentMoniker": "app\\core\\deps.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\deps.py",
+              "RelativeToolTip": "app\\core\\deps.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:12:15.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "user.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\user.py",
+              "RelativeDocumentMoniker": "app\\crud\\user.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\user.py",
+              "RelativeToolTip": "app\\crud\\user.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:07:49.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "admin.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\admin.py",
+              "RelativeDocumentMoniker": "app\\crud\\admin.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\crud\\admin.py",
+              "RelativeToolTip": "app\\crud\\admin.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:07:43.236Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "users.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\users.py",
+              "RelativeDocumentMoniker": "app\\api\\users.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\api\\users.py",
+              "RelativeToolTip": "app\\api\\users.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:07:15.034Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "user.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\user.py",
+              "RelativeDocumentMoniker": "app\\schemas\\user.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\user.py",
+              "RelativeToolTip": "app\\schemas\\user.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAwwBoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:01:13.458Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "admin.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\admin.py",
+              "RelativeDocumentMoniker": "app\\schemas\\admin.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\admin.py",
+              "RelativeToolTip": "app\\schemas\\admin.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:01:06.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "address.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\address.py",
+              "RelativeDocumentMoniker": "app\\schemas\\address.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\address.py",
+              "RelativeToolTip": "app\\schemas\\address.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T21:01:11.929Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "admin.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\admin.py",
+              "RelativeDocumentMoniker": "app\\models\\admin.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\models\\admin.py",
+              "RelativeToolTip": "app\\models\\admin.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T20:55:31.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "userportal.html",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\userportal.html",
+              "RelativeDocumentMoniker": "Frontend\\userportal.html",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\userportal.html",
+              "RelativeToolTip": "Frontend\\userportal.html",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-07T16:16:36.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "main.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\main.py",
+              "RelativeDocumentMoniker": "app\\main.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\main.py",
+              "RelativeToolTip": "app\\main.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T20:56:26.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "security.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\security.py",
+              "RelativeDocumentMoniker": "app\\core\\security.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\core\\security.py",
+              "RelativeToolTip": "app\\core\\security.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T20:54:15.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "adminportal.html",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\adminportal.html",
+              "RelativeDocumentMoniker": "Frontend\\adminportal.html",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\adminportal.html",
+              "RelativeToolTip": "Frontend\\adminportal.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-05-07T16:17:14.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "style.css",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\css\\style.css",
+              "RelativeDocumentMoniker": "Frontend\\css\\style.css",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\Frontend\\css\\style.css",
+              "RelativeToolTip": "Frontend\\css\\style.css",
+              "ViewState": "AgIAABcAAAAAAAAAAAAiwDwAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-07T15:46:30.078Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "276730f3-13b7-45de-844b-6495cdfe074e",
+        "Display": 1,
+        "X": 828,
+        "Y": 389,
+        "Width": 1578,
+        "Height": 753,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "violation.py",
+              "DocumentMoniker": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\violation.py",
+              "RelativeDocumentMoniker": "app\\schemas\\violation.py",
+              "ToolTip": "C:\\Users\\autum\\Desktop\\Assingment_2_28835332\\app\\schemas\\violation.py",
+              "RelativeToolTip": "app\\schemas\\violation.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-05-07T22:35:00.242Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

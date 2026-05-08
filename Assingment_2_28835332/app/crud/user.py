@@ -5,13 +5,26 @@ from app.core.security import hash_password
 
 def get_user_by_email(db:Session, email: str):
     return db.query(UserModel).filter(UserModel.email == email).first()
+def get_user_by_driversLicence(db:Session, driversLicence: str):
+    return db.query(UserModel).filter(UserModel.driversLicence == driversLicence).first()
+def get_user_by_id(db:Session, user_id: int):
+    return db.query(UserModel).filter(UserModel.userID == user_id).first()
 
 def create_user(db:Session, user_in: UserCreate):
     user = UserModel(
-        username=user_in.username,
         email=user_in.email,
         password_hash=hash_password(user_in.password),
-        role=user_in.role or "citizen"
+        forename=user_in.forename,
+        surname=user_in.surname,
+        driversLicence=user_in.driversLicence,
+        dateOfBirth=user_in.dateOfBirth,
+        phoneNumber=user_in.phoneNumber,
+        addressLine1=user_in.addressLine1,
+        addressLine2=user_in.addressLine2,
+        city=user_in.city,
+        state=user_in.state,
+        zipCode=user_in.zipCode,
+        VIN=user_in.VIN
     )
     db.add(user)
     db.commit()

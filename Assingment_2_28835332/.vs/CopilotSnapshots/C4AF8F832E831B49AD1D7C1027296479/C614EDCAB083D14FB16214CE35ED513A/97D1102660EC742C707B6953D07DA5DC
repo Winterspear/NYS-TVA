@@ -1,0 +1,38 @@
+﻿const ViolationButton = document.getElementById("Violation_counter");
+const ViolationParagraph = document.getElementById("Vio_counter");
+if (ViolationButton && ViolationParagraph) {
+    ViolationButton.addEventListener("click", () => {
+        let message;
+        const API_URL = "http://127.0.0.1:8000"
+        async function loadViolations() {
+            const list = document.getElementById('violations-list');
+            list.innerHTML = '<p class="Loading">Loading Violations... </p>';
+            try {
+                const responce = await fetch(`${API_URL}/violations/${driver_id}`);
+                if (!responce.ok) {
+                    throw new Error('Failed to fetch violations');
+                }
+                const violations = await responce.json();
+                if (violations.length === 0) {
+                    list.innerHTML = '<p class="NoViolations">No violations found.</p>';
+                    return;
+                }
+                violations.forEach(violation => {
+                    const div = document.createElement('div');
+                    div.className = "violation-card"
+                    div.innerHTML = `
+                                        <p><strong>Date:</strong> ${violation.ViolationDateTime}</p>
+                                        <p><strong>You were:</strong> ${violation.distance} <strong> miles </strong> ${violation.direction} <strong> of </strong> ${violation.landMark} <strong> on the </strong> ${violation.road}</p>
+                                        <p><strong>Details:</strong> ${violation.details}</p>
+                                        <p><strong>Officer's Personnel Number':</strong> $${violation.personnelNumber}</p>
+                                    `;
+                    list.appendChild(div);
+                });
+            } catch (error) {
+                list.innerHTML = `<p class="Error">Error: ${error.message}</p>`;
+            }
+        }
+        loadViolations();
+        console.log("Button clicked at", now.toLocaleTimeString());
+    });
+}

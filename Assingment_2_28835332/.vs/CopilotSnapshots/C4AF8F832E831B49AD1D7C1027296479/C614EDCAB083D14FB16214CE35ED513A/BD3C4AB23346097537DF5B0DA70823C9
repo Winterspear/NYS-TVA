@@ -1,0 +1,52 @@
+﻿// Attach submit handler to the register form, serialize to JSON and POST it.
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('register-form');
+  if (!form) return;
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    // Basic client-side validation
+    if (data.password !== data.confirm) {
+      alert('Passwords do not match');
+      return;
+    }
+
+    // Remove confirm field before sending
+    delete data.confirm;
+
+    // Normalize some types
+    if (data.dateofbirth) {
+      // keep as ISO date (yyyy-mm-dd)
+      data.dateofbirth = new Date(data.dateofbirth).toISOString();
+    }
+
+    // Example: log the JSON that will be sent
+    const json = JSON.stringify(data);
+    console.log('Register payload:', json);
+
+    try {
+      const resp = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: json,
+      });
+
+      if (!resp.ok) {
+        const text = await resp.text();
+        alert('Registration failed: ' + (text || resp.statusText));
+        return;
+      }
+
+      // Handle success (redirect or message)
+      alert('Registration successful');
+      window.location.href = 'userportal.html';
+    } catch (err) {
+      console.error(err);
+      alert('Network error while registering');
+    }
+  });
+});

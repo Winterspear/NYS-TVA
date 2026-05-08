@@ -13,4 +13,4 @@ class Vehicle(Base):
     manufactureyear = Column(Year, nullable=False)
     color = Column(String(30), nullable=False)
     addressID = Column(Integer, ForeignKey("address.addressID"), nullable=False)
-    licenseStateID = Column(Integer, ForeignKey("licenceState.licenceStateID"), nullable=False)
+    driversLicence = Column(String(30), nullable=False)
