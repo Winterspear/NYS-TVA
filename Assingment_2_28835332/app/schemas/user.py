@@ -21,6 +21,7 @@ class UserCreate(UserBase):
     state: str
     zipCode: str
     VIN: str
+    role: str
 
 class UserUpdate(BaseModel):
     email: Optional[str] = None
@@ -38,6 +39,16 @@ class UserOut(UserBase):
     forename: str
     surname: str
     email: str
+    driversLicence: str
+    dateOfBirth: str
+    phoneNumber: int
+    addressLine1: str
+    addressLine2: Optional[str] = None
+    city: str
+    state: str
+    zipCode: str
+    VIN: str
+    role: str
 
     class Config:
         orm_mode = True

@@ -18,3 +18,4 @@ class User(Base):
     state = Column(String(30), nullable=False)
     zipCode = Column(String(30), nullable=False)
     VIN = Column(String(30), nullable=False)
+    role = Column(String(30), nullable=False)

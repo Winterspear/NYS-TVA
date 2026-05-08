@@ -6,7 +6,7 @@ if (ViolationCButton && ViolationCParagraph) {
     ViolationCButton.addEventListener("click", () => {
         let message;
         const API_URL = "http://127.0.0.1:8000"
-        async function loadViolations() {
+        async function loadNumberofViolations() {
             const list = document.getElementById('violations-list');
             list.innerHTML = '<p class="Loading">Loading Number of Violations... </p>';
             try {
@@ -19,12 +19,12 @@ if (ViolationCButton && ViolationCParagraph) {
                     list.innerHTML = '<p class="NoViolations">No violations found.</p>';
                     return;
                 }
-                ViolationParagraph.textContent = `Number of Violations: ${violations}`;
+                ViolationCParagraph.textContent = `Number of Violations: ${violations}`;
             } catch (error) {
                 list.innerHTML = `<p class="Error">Error: ${error.message}</p>`;
             }
         }
-        loadViolations();
+        loadNumberofViolations();
      });
 }
 if (OfficerCButton && OfficerCParagraph) {
