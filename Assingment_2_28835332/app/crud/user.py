@@ -24,7 +24,8 @@ def create_user(db:Session, user_in: UserCreate):
         city=user_in.city,
         state=user_in.state,
         zipCode=user_in.zipCode,
-        VIN=user_in.VIN
+        VIN=user_in.VIN,
+        role=user_in.role
     )
     db.add(user)
     db.commit()

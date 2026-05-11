@@ -18,3 +18,11 @@ def get_violation_by_id(db: Session, violation_id: int):
         raise DatabaseConncectionError("Cannot connect to the database.")
     except SQLAlchemyError:
         raise DatabaseQueryError("Failed to fetch the violation from the database.")
+
+def get_violations_by_violation_id(db: Session, violation_id: int):
+    try:
+        return db.query(Violation).filter(Violation.violationID == violation_id).first()
+    except operationalError:
+        raise DatabaseConncectionError("Cannot connect to the database.")
+    except SQLAlchemyError:
+        raise DatabaseQueryError("Failed to fetch the violation from the database.")
