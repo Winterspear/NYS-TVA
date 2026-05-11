@@ -1,4 +1,4 @@
-from Assingment_2_28835332.app.core.security import admin_required
+from app.core.security import admin_required
 from fastapi import APIRouter, Depends, BackgroundTasks
 from sqlalchemy.orm import Session
 from typing import List

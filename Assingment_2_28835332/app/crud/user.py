@@ -13,7 +13,7 @@ def get_user_by_id(db:Session, user_id: int):
 def create_user(db:Session, user_in: UserCreate):
     user = UserModel(
         email=user_in.email,
-        password_hash=hash_password(user_in.password),
+        password=hash_password(user_in.password),
         forename=user_in.forename,
         surname=user_in.surname,
         driversLicence=user_in.driversLicence,

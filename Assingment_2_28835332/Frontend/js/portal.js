@@ -1,10 +1,10 @@
 const form = document.getElementById('login-form');
-const API_URL = "http://127.0.0.1:8000"
+const API_URL = "http://127.0.0.1:8001"
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const formData = new URLSearchParams();
-    formData.append("email", document.getElementById('email').value);
-    formData.append("password", document.getElementById('password').value);
+    formData.append("email", document.getElementById('login-email').value);
+    formData.append("password", document.getElementById('login-password').value);
 
     const responce = await fetch(`${API_URL}/auth/login`, {
         method: "POST",

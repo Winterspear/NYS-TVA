@@ -1,5 +1,5 @@
-from fastapi import FastAPI, request
-from app.api import drivers, officers, vehicles, violations, addresses, licenceStates, auth
+from fastapi import FastAPI, Request
+from app.api import drivers, officers, vehicles, violations, addresses, auth, users
 from app.db.init_db import init_db
 from fastapi.responses import JSONResponse
 from fastapi.exceptions import RequestValidationError
@@ -19,7 +19,16 @@ app.include_router(officers.router, prefix="/officers", tags=["Officers"])
 app.include_router(vehicles.router, prefix="/vehicles", tags=["Vehicles"])
 app.include_router(violations.router, prefix="/violations", tags=["Violations"])
 app.include_router(addresses.router, prefix="/addresses", tags=["Addresses"])
-app.include_router(licenceStates.router, prefix="/licence-states", tags=["Licence States"])
+print("REGISTERING USERS ROUTER")
+app.include_router(users.router)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 @app.get("/")
 def root():

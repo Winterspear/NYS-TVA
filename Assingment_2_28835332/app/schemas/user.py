@@ -1,8 +1,22 @@
 from pydantic import BaseModel
 from typing import Optional
+from datetime import date
 
 class UserBase(BaseModel):
-    userID: int
+    forename: str
+    surname: str
+    email: str
+    password: str
+    driversLicence: str
+    dateOfBirth: date
+    phoneNumber: int
+    addressLine1: str
+    addressLine2: Optional[str] = None
+    city: str
+    state: str
+    zipCode: str
+    VIN: str
+    role: str
     
 
 
@@ -13,8 +27,8 @@ class UserCreate(UserBase):
     email: str
     password: str
     driversLicence: str
-    dateOfBirth: str
-    phoneNumber: int
+    dateOfBirth: date
+    phoneNumber: str
     addressLine1: str
     addressLine2: Optional[str] = None
     city: str
@@ -25,8 +39,8 @@ class UserCreate(UserBase):
 
 class UserUpdate(BaseModel):
     email: Optional[str] = None
-    password_hash: Optional[str] = None
-    phoneNumber: Optional[int] = None
+    password: Optional[str] = None
+    phoneNumber: Optional[str] = None
     addressLine1: Optional[str] = None
     addressLine2: Optional[str] = None
     city: Optional[str] = None
@@ -36,19 +50,6 @@ class UserUpdate(BaseModel):
 
 class UserOut(UserBase):
     userID: int
-    forename: str
-    surname: str
-    email: str
-    driversLicence: str
-    dateOfBirth: str
-    phoneNumber: int
-    addressLine1: str
-    addressLine2: Optional[str] = None
-    city: str
-    state: str
-    zipCode: str
-    VIN: str
-    role: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True

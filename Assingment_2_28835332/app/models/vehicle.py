@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, CHAR, TEXT, Boolean, ForeignKey, Year
+from sqlalchemy import Column, Integer, String, DateTime, CHAR, TEXT, Boolean, ForeignKey
 from app.db.base import Base
 from sqlalchemy.orm import relationship
 
@@ -10,7 +10,7 @@ class Vehicle(Base):
     color = Column(String(30), nullable=False)
     make = Column(String(30), nullable=False)
     design = Column(String(30), nullable=False)
-    manufactureyear = Column(Year, nullable=False)
+    manufactureyear = Column(Integer, nullable=False)
     color = Column(String(30), nullable=False)
     addressID = Column(Integer, ForeignKey("address.addressID"), nullable=False)
-    driversLicence = Column(String(30), nullable=False)
+    DriverID = Column(Integer, ForeignKey("Driver.DriverID"), nullable=False)

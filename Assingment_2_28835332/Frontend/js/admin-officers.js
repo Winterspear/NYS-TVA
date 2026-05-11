@@ -1,6 +1,6 @@
 const token = localStorage.getItem("token");
 const role = localStorage.getItem("role");
-const API_URL = "http://127.0.0.1:8000"
+const API_URL = "http://127.0.0.1:8001"
 
 if (!token || role !== "admin") {
     window.location.href = "portal.html";

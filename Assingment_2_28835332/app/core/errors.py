@@ -14,7 +14,7 @@ class vehicleNotFound(Exception):
     def __init__(self, vehicleID: int):
         self.vehicleID = vehicleID
 
-class driverNotFound(Exception):
+class DriverNotFound(Exception):
     def __init__(self, driverID: int):
         self.driverID = driverID
 

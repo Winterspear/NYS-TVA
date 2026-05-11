@@ -13,7 +13,7 @@ const perameter = new URLSearchParams(window.location.search);
 const violationID = perameter.get('violationID');
 
 async function loadViolation() {
-    const API_URL = "http://127.0.0.1:8000";
+    const API_URL = "http://127.0.0.1:8001";
     const response = await fetch(`${API_URL}/violations/violation/${violationID}`);
     const violation = await response.json();
 
