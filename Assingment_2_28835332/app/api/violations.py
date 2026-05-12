@@ -10,6 +10,8 @@ from app.core.errors import violationNotFound
 from app.models.violation import Violation
 from app.core.deps import get_current_user
 from app.core.security import admin_required
+from app.models.user import User
+from app.models.driver import Driver
 
 router = APIRouter(prefix="/violations", tags=["violations"])
 
@@ -18,7 +20,7 @@ def list_violations(db: Session = Depends(get_db)):
     return get_all_violations(db)
 
 
-@router.get("/driver/{driverID}", response_model=violationOut)
+@router.get("/driver/{driver_id}", response_model=violationOut)
 def read_violation(driver_id: int, db: Session = Depends(get_db)):
     violation = get_violations_by_driver_id(db, driver_id)
     if not violation:
@@ -66,3 +68,11 @@ def update_violation(
             violation[index] = updated_violation
             return updated_violation
     raise violationNotFound(violation_id=violation_id)
+
+@router.get("/me/violations", response_model=list[violationOut])
+def get_my_violations(db: Session = Depends(get_db), user = Depends(get_current_user)):
+    return db.query(Violation)\
+        .join(Driver, Violation.DriverID == Driver.driverID)\
+        .join(User, User.driversLicence == Driver.driversLicence)\
+        .filter(User.userID == user.userID)\
+        .all()

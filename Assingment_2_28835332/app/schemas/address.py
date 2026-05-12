@@ -11,7 +11,7 @@ class AddressOut(BaseModel):
     zipCode: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class AddressCreate(BaseModel):
     addressLine1 :str

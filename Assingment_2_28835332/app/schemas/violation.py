@@ -17,7 +17,7 @@ class violationOut(BaseModel):
     driverID: int
 
     class Config:
-        orm_mode = True
+        from_attribute = True
 
 class violationCreate(BaseModel):
     violationDateTime: datetime

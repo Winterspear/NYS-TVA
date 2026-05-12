@@ -12,7 +12,7 @@ class VehicleOut(BaseModel):
     licenseStateID: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class VehicleCreate(BaseModel):
     VIN: str

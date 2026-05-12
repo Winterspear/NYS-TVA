@@ -9,7 +9,7 @@ class OfficerOut(BaseModel):
     detatchment: str
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class OfficerCreate(BaseModel):
     personnelNumber: int

@@ -13,5 +13,5 @@ class Driver(Base):
     heightInches = Column(Integer, nullable=False)
     weight = Column(Integer, nullable=False)
     eyeColor = Column(String(30), nullable=False)
-    licenceStateID = Column(Integer, ForeignKey("LicenceState.LicenceStateID"), nullable=False)
+    driversLicence = Column(String(30), nullable=False)
     addressID = Column(Integer, ForeignKey("Address.AddressID"), nullable=False)

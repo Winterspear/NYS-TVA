@@ -10,11 +10,11 @@ class DriverOut(BaseModel):
     heightInches: int
     weight: int
     eyeColor: str
-    licenceStateID: int
+    driversLicence: str
     addressID: int
 
     class Config:
-        orm_mode = True
+        from_attributes = True
 
 class DriverCreate(BaseModel):
     firstName: str
@@ -24,7 +24,7 @@ class DriverCreate(BaseModel):
     heightInches: int
     weight: int
     eyeColor: str
-    licenceStateID: int
+    driversLicence: str
     addressID: int
 
 class DriverUpdate(BaseModel):
@@ -35,5 +35,5 @@ class DriverUpdate(BaseModel):
     heightInches: Optional[int] = None
     weight: Optional[int] = None
     eyeColor: Optional[str] = None
-    licenceStateID: Optional[int] = None
+    driversLicence: Optional[str] = None
     addressID: Optional[int] = None

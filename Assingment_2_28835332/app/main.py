@@ -13,12 +13,12 @@ app = FastAPI(title="New York State Traffic Violation API", version="1.0.0")
 init_db()
 
 
-app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
-app.include_router(drivers.router, prefix="/drivers", tags=["Drivers"])
-app.include_router(officers.router, prefix="/officers", tags=["Officers"])
-app.include_router(vehicles.router, prefix="/vehicles", tags=["Vehicles"])
-app.include_router(violations.router, prefix="/violations", tags=["Violations"])
-app.include_router(addresses.router, prefix="/addresses", tags=["Addresses"])
+app.include_router(auth.router)
+app.include_router(drivers.router)
+app.include_router(officers.router)
+app.include_router(vehicles.router)
+app.include_router(violations.router)
+app.include_router(addresses.router)
 print("REGISTERING USERS ROUTER")
 app.include_router(users.router)
 

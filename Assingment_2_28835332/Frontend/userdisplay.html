@@ -25,12 +25,18 @@
                 <h2>Your Traffic Violations</h2>
                 <div id="violations-list">
                     <script>
-                        const API_URL = "http://127.0.0.1:8000"
+                        const API_URL = "http://127.0.0.1:8001"
                         async function loadViolations() {
+                            const token = localStorage.getItem('token')
                             const list = document.getElementById('violations-list');
                             list.innerHTML = '<p class="Loading">Loading Violations... </p>';
                             try {
-                                const responce = await fetch(`${API_URL}/violations/${driver_id}`);
+                                const responce = await fetch(`${API_URL}/violations/me/violations`, {
+                                    headers: {
+                                        Authorization: `Bearer ${token}`
+                                    }
+                                });
+                                console.log("TOKEN: ", localStorage.getItem("token"));
                                 if (!responce.ok) {
                                     throw new Error('Failed to fetch violations');
                                 }
@@ -44,8 +50,8 @@
                                     div.className = "violation-card"
                                     div.innerHTML = `
                                         <p><strong>Date:</strong> ${violation.ViolationDateTime}</p>
-                                        <p><strong>You were:</strong> ${violation.distance} <strong> miles </strong> ${violation.direction} <strong> of </strong> ${violation.landMark} <strong> on the </strong> ${violation.road}</p>
-                                        <p><strong>Details:</strong> ${violation.details}</p>
+                                        <p><strong>You were:</strong> ${violation.distance} <strong> miles </strong> ${violation.direction} <strong> of </strong> ${violation.Landmark} <strong> on the </strong> ${violation.road}</p>
+                                        <p><strong>Details:</strong> ${violation.ViolationDetails}</p>
                                         <p><strong>Officer's Personnel Number':</strong> ${violation.personnelNumber}</p>
                                     `;
                                     list.appendChild(div);
