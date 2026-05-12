@@ -1,3 +1,4 @@
+const user_id = sessionStorage.getItem("user_id");
 async function getUser() {
     const API_URL = "http://127.0.0.1:8001"
     try {

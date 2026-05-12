@@ -9,7 +9,7 @@ class VehicleOut(BaseModel):
     design: str
     manufactureyear: int
     addressID: int
-    licenseStateID: int
+    DriversLicence: str
 
     class Config:
         from_attributes = True
@@ -21,7 +21,7 @@ class VehicleCreate(BaseModel):
     design: str
     manufactureyear: int
     addressID: int
-    licenseStateID: int
+    DriversLicence: str
 
 class VehicleUpdate(BaseModel):
     VIN: Optional[str] = None
@@ -30,4 +30,4 @@ class VehicleUpdate(BaseModel):
     design: Optional[str] = None
     manufactureyear: Optional[int] = None
     addressID: Optional[int] = None
-    licenseStateID: Optional[int] = None
+    DriversLicence: Optional[str] = None

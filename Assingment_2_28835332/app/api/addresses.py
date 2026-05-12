@@ -24,8 +24,8 @@ async def update_address(address_id: int, address_in: AddressCreate, updated: Ad
 
 @router.delete("/address/{address_id}/delete", status_code=204)
 async def delete_address(address_id: int, db: Session = Depends(get_db), current_user: str = Depends(get_current_user)):
-    for index, address in enumerate(get_all_addresses(db)):
-        if address.addressID == address_id:
-            deleted_address = address.pop(index)
-            return deleted_address
-    raise addressNotFound(f"Address with ID {address_id} not found.")
+    db_address = db.query(address).Filter(address.addressID == address_id).first()
+    if not db_address:
+        raise addressNotFound(f"Address with ID {address_id} not found.")
+    db.delete(db_address)
+    db.commit()

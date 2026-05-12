@@ -13,8 +13,7 @@
                 <h1>Your View</h1>
                 <nav>
                     <a href="home.html">Home</a>
-                    <a href="userportal.html">User Portal</a>
-                    <a href="adminportal.html">Admin Portal</a>
+                    <a href="portal.html">Portal</a>
                 </nav>
             </div>
         </div>
@@ -27,7 +26,7 @@
                     <script>
                         const API_URL = "http://127.0.0.1:8001"
                         async function loadViolations() {
-                            const token = localStorage.getItem('token')
+                            const token = sessionStorage.getItem('token')
                             const list = document.getElementById('violations-list');
                             list.innerHTML = '<p class="Loading">Loading Violations... </p>';
                             try {
@@ -36,7 +35,7 @@
                                         Authorization: `Bearer ${token}`
                                     }
                                 });
-                                console.log("TOKEN: ", localStorage.getItem("token"));
+                                console.log("TOKEN: ", sessionStorage.getItem("token"));
                                 if (!responce.ok) {
                                     throw new Error('Failed to fetch violations');
                                 }

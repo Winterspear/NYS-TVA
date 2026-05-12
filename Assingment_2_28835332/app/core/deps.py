@@ -6,9 +6,7 @@ from jose import JWTError, jwt
 
 from app.db.session import get_db
 from app.crud import user as crud_user
-from app.core.security import SECRET_KEY, ALGORITHM
-
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/auth/login")
+from app.core.security import SECRET_KEY, ALGORITHM, oauth2_scheme
 
 def get_current_user(db: Session = Depends(get_db), token :str = Depends(oauth2_scheme)):
     credentials_exception = HTTPException(

@@ -7,7 +7,7 @@ class violationOut(BaseModel):
     violationDateTime: datetime
     distance: int
     direction: str
-    landMark: str
+    landmark: str
     road: str
     violationDetails: str
     actionPoint1: bool
@@ -17,13 +17,13 @@ class violationOut(BaseModel):
     driverID: int
 
     class Config:
-        from_attribute = True
+        from_attributes = True
 
 class violationCreate(BaseModel):
     violationDateTime: datetime
     distance: int
     direction: str
-    landMark: str
+    landmark: str
     road: str
     violationDetails: str
     actionPoint1: bool
@@ -36,7 +36,7 @@ class violationUpdate(BaseModel):
     violationDateTime: Optional[datetime] = None
     distance: Optional[int] = None
     direction: Optional[str] = None
-    landMark: Optional[str] = None
+    landmark: Optional[str] = None
     road: Optional[str] = None
     violationDetails: Optional[str] = None
     actionPoint1: Optional[bool] = None

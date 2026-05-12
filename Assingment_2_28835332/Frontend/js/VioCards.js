@@ -1,18 +1,23 @@
 const API_URL = "http://127.0.0.1:8001"
 async function violationCardCreate() {
     try {
-        const responce = await fetch(`${API_URL}/violations/allViolations`);
+        const token = sessionStorage.getItem("token");
+        const responce = await fetch(`${API_URL}/violations/allViolations`, {
+            headers: {
+                "Authorization": `Bearer ${token}`
+            }
+        });
         const violations = await responce.json();
-        const container = document.getElementById('violation-cards-container');
+        const container = document.getElementById('card-container');
         container.innerHTML = ''; // Clear existing cards
 
         violations.forEach(violation => {
             const card = document.createElement('div');
 
-            card.classList.add('violation-card');
+            card.classList.add('card');
 
             card.onclick = () => {
-                window.location.href = `edit.html?id=${violation.violationID}`;
+                window.location.href = `editViolation.html?id=${violation.violationID}`;
             }
 
             card.innerHTML = `
@@ -20,9 +25,9 @@ async function violationCardCreate() {
             <p>Date and Time: ${violation.violationDateTime}</p>
             <p>Distance: ${violation.distance}</p>
             <p>Direction: ${violation.direction}</p>
-            <p>Landmark: ${violation.landMark}</p>
+            <p>Landmark: ${violation.landmark}</p>
             <p>Road: ${violation.road}</p>
-            <p>Details: ${violation.details}</p>
+            <p>Details: ${violation.violationDetails}</p>
             <p>Personnel Number: ${violation.personnelNumber}</p>
             `;
 
@@ -33,4 +38,4 @@ async function violationCardCreate() {
     }
 };
 
-violationCardCreate
+violationCardCreate()

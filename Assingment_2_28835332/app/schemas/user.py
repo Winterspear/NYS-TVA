@@ -9,7 +9,7 @@ class UserBase(BaseModel):
     password: str
     driversLicence: str
     dateOfBirth: date
-    phoneNumber: int
+    phoneNumber: str
     addressLine1: str
     addressLine2: Optional[str] = None
     city: str

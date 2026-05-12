@@ -1,52 +1,55 @@
 const ViolationCButton = document.getElementById("Violation_counter");
-const ViolationCParagraph = document.getElementById("Vio_counter");
+const ViolationCParagraph = document.getElementById("vio_counter");
 const OfficerCButton = document.getElementById("Officer_counter");
-const OfficerCParagraph = document.getElementById("Off_counter");
-if (ViolationCButton && ViolationCParagraph) {
-    ViolationCButton.addEventListener("click", () => {
-        let message;
-        const API_URL = "http://127.0.0.1:8001"
-        async function loadNumberofViolations() {
-            const list = document.getElementById('violations-list');
-            list.innerHTML = '<p class="Loading">Loading Number of Violations... </p>';
-            try {
-                const responce = await fetch(`${API_URL}/violations/NumberOfViolations`);
-                if (!responce.ok) {
-                    throw new Error('Failed to fetch violations');
-                }
-                const violations = await responce.json();
-                if (violations.length === 0) {
-                    list.innerHTML = '<p class="NoViolations">No violations found.</p>';
-                    return;
-                }
-                ViolationCParagraph.textContent = `Number of Violations: ${violations}`;
-            } catch (error) {
-                list.innerHTML = `<p class="Error">Error: ${error.message}</p>`;
+const OfficerCParagraph = document.getElementById("off_counter");
+const API_URL = "http://127.0.0.1:8001"
+    ViolationCButton.addEventListener("click", async () => {
+
+        ViolationCParagraph.textContent =
+            "Loading Number of Violations...";
+
+        try {
+
+            const response = await fetch(
+                `${API_URL}/violations/NumberOfViolations`
+            );
+
+            if (!response.ok) {
+                throw new Error("Failed to fetch violations");
             }
+
+            const count = await response.json();
+
+            console.log("COUNT: ", count);
+
+            ViolationCParagraph.textContent =
+                `Number of Violations: ${count}`;
+
+        } catch (error) {
+
+            console.error(error);
+
+            ViolationCParagraph.textContent =
+                `Error: ${error.message}`;
         }
-        loadNumberofViolations();
-     });
-}
+    });
 if (OfficerCButton && OfficerCParagraph) {
     OfficerCButton.addEventListener("click", () => {
         let message;
-        const API_URL = "http://127.0.0.1:8000"
+        const API_URL = "http://127.0.0.1:8001"
         async function loadOfficers() {
-            const list = document.getElementById('officers-list');
-            list.innerHTML = '<p class="Loading">Loading Number of Officers... </p>';
             try {
                 const responce = await fetch(`${API_URL}/officers/NumberOfOfficers`);
                 if (!responce.ok) {
                     throw new Error('Failed to fetch officers');
                 }
-                const officers = await responce.json();
-                if (officers.length === 0) {
-                    list.innerHTML = '<p class="NoOfficers">No officers found.</p>';
-                    return;
-                }
-                OfficerCParagraph.textContent = `Number of Officers: ${officers}`;
+                const count = await responce.json()
+                OfficerCParagraph.textContent = `Number of Officers: ${count}`;
             } catch (error) {
-                list.innerHTML = `<p class="Error">Error: ${error.message}</p>`;
+                console.error(error);
+
+                OfficerCParagraph.textContent =
+                `Error: ${error.message}`;
             }
         }
         loadOfficers();

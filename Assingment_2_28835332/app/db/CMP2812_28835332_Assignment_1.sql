@@ -145,3 +145,6 @@ VALUES
 ('2025-06-08 16:43:00', 4, 'E', 'Lake George', '9N', 'Swerving Dangerously', True, False, False, 409, 3),
 ('2025-05-17 08:17:00', 2, 'S', 'Statue of Liberty', 'Off-Road', 'Unavailable', True, False, True, 634, 5),
 ('2025-03-10 12:06:00', 19, 'W', 'Saratoga Springs', 'I-87', 'Drunk Driving', False, False, True, 409, 1);
+
+INSERT INTO NewYorkTrafficViolations.Users (forename, surname, email, password, driversLicence, dateOfBirth, phoneNumber, addressLine1, addressLine2, city, state, zipCode, VIN, Role)
+Values ('Adam', 'Inn', 'Admin@gmail.com', '$argon2id$v=19$m=65536,t=3,p=4$FsK4F0KIsXauFaL0HoPwHg$GGU/fuHdMhIackANA3LuT50v5ywZtsHK8WuBttjEBgo', 'admin12221221', '19990101' , '01234567899', '1 Main Street', null, 'NY', 'NY', '10101010', '123123123163', 'admin')

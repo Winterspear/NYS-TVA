@@ -5,7 +5,7 @@ from typing import List
 
 from app.core.deps import get_current_user
 from app.db.session import get_db
-from app.schemas.officer import OfficerCreate, OfficerOut
+from app.schemas.officer import OfficerCreate, OfficerOut, OfficerUpdate
 from app.crud.officer import get_all_officers
 from app.core.errors import officerNotFound
 from app.models.officer import officer
@@ -25,20 +25,27 @@ def read_officers(db: Session = Depends(get_db), user=Depends(admin_required)):
 
 @router.get("/find/{personnelNumber}", response_model=OfficerOut)
 def read_officer(personnelNumber: int, db: Session = Depends(get_db), user=Depends(admin_required)):
-    officer = db.query(officer).filter(officer.personnelNumber == personnelNumber).first()
-    if not officer:
+    db_officer = db.query(officer).filter(officer.personnelNumber == personnelNumber).first()
+    if not db_officer:
         raise officerNotFound()
-    return officer
+    return db_officer
 
 @router.put("/update/{personnelNumber}", response_model=OfficerOut)
-def update_officer(personnelNumber: int, officer_update: OfficerCreate, db: Session = Depends(get_db), user=Depends(admin_required)):
-    officer = db.query(officer).filter(officer.personnelNumber == personnelNumber).first()
-    if not officer:
+def update_officer(personnelNumber: int, officer_update: OfficerUpdate, db: Session = Depends(get_db), user=Depends(admin_required)):
+    db_officer = db.query(officer).filter(officer.personnelNumber == personnelNumber).first()
+    if not db_officer:
         raise officerNotFound()
-    officer.firstName = officer_update.firstName
-    officer.lastName = officer_update.lastName
-    officer.district = officer_update.district
-    officer.detatchment = officer_update.detatchment
+    if officer_update.firstName is not None:
+        db_officer.firstName = officer_update.firstName
+
+    if officer_update.lastName is not None:
+        db_officer.lastName = officer_update.lastName
+
+    if officer_update.district is not None:
+        db_officer.district = officer_update.district
+
+    if officer_update.detachment is not None:
+        db_officer.detachment = officer_update.detachment
     db.commit()
-    db.refresh(officer)
-    return {"message": "Officer updated successfully", "officer": officer}
+    db.refresh(db_officer)
+    return db_officer

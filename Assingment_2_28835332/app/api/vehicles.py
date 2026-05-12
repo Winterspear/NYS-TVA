@@ -12,12 +12,12 @@ from app.models.vehicle import Vehicle
 router = APIRouter(prefix="/vehicles", tags=["vehicles"])
 
 @router.delete("/vehicle/{vehicle_id}/delete", status_code=204)
-async def delete_vehicle(vehicle_id: int, db: Session = Depends(get_db), current_user: str = Depends(get_current_user)):
-    for index, v in enumerate(get_all_vehicles(db)):
-        if v.vehicleID == vehicle_id:
-            deleted_vehicle = v.pop(index)
-            return deleted_vehicle
-    raise vehicleNotFound(f"Vehicle with ID {vehicle_id} not found.")
+async def delete_vehicle(vehicle_id: int, db: Session = Depends(get_db), current_user=Depends(get_current_user)):
+    vehicle = db.query(Vehicle).filter(Vehicle.vehicleID == vehicle_id).first()
+    if not vehicle:
+        raise vehicleNotFound(f"Vehicle with ID {vehicle_id} not found.")
+    db.delete(vehicle)
+    db.commit()
 
 
 @router.put("/vehicle/{vehicle_id}/update", status_code=201, response_model=VehicleOut)
