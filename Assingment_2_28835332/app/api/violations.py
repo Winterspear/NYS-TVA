@@ -85,7 +85,7 @@ def update_violation(
 @router.get("/me/violations", response_model=list[violationOut])
 def get_my_violations(db: Session = Depends(get_db), user = Depends(get_current_user)):
     return db.query(Violation)\
-        .join(Driver, Violation.DriverID == Driver.driverID)\
+        .join(Driver, Violation.driverID == Driver.driverID)\
         .join(User, User.driversLicence == Driver.driversLicence)\
         .filter(User.userID == user.userID)\
         .all()
